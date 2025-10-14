@@ -1,0 +1,15 @@
+D:\Project\OOP-Shylo\lab3v20\bin\Debug\net9.0\lab3v20.exe
+D:\Project\OOP-Shylo\lab3v20\bin\Debug\net9.0\lab3v20.deps.json
+D:\Project\OOP-Shylo\lab3v20\bin\Debug\net9.0\lab3v20.runtimeconfig.json
+D:\Project\OOP-Shylo\lab3v20\bin\Debug\net9.0\lab3v20.dll
+D:\Project\OOP-Shylo\lab3v20\bin\Debug\net9.0\lab3v20.pdb
+D:\Project\OOP-Shylo\lab3v20\obj\Debug\net9.0\lab3v20.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\OOP-Shylo\lab3v20\obj\Debug\net9.0\lab3v20.AssemblyInfoInputs.cache
+D:\Project\OOP-Shylo\lab3v20\obj\Debug\net9.0\lab3v20.AssemblyInfo.cs
+D:\Project\OOP-Shylo\lab3v20\obj\Debug\net9.0\lab3v20.csproj.CoreCompileInputs.cache
+D:\Project\OOP-Shylo\lab3v20\obj\Debug\net9.0\lab3v20.sourcelink.json
+D:\Project\OOP-Shylo\lab3v20\obj\Debug\net9.0\lab3v20.dll
+D:\Project\OOP-Shylo\lab3v20\obj\Debug\net9.0\refint\lab3v20.dll
+D:\Project\OOP-Shylo\lab3v20\obj\Debug\net9.0\lab3v20.pdb
+D:\Project\OOP-Shylo\lab3v20\obj\Debug\net9.0\lab3v20.genruntimeconfig.cache
+D:\Project\OOP-Shylo\lab3v20\obj\Debug\net9.0\ref\lab3v20.dll
