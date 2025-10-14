@@ -4,8 +4,8 @@ using System.Linq;
 
 namespace lab3v20
 {
-    // 🔹 Базовий клас — Sensor
-    class Sensor
+    //  Базовий абстрактний клас — Sensor
+    abstract class Sensor
     {
         public string Name { get; set; }
 
@@ -14,11 +14,8 @@ namespace lab3v20
             Name = name;
         }
 
-        // Віртуальний метод — кожен тип сенсора реалізує його по-своєму
-        public virtual double ReadValue()
-        {
-            return 0.0;
-        }
+        // Абстрактний метод — кожен тип сенсора повинен реалізувати його
+        public abstract double ReadValue();
 
         public override string ToString()
         {
@@ -26,14 +23,14 @@ namespace lab3v20
         }
     }
 
-    // 🔹 Похідний клас TemperatureSensor
+    //  Похідний клас TemperatureSensor
     class TemperatureSensor : Sensor
     {
         private Random rand = new Random();
 
         public TemperatureSensor(string name) : base(name) { }
 
-        // Перевизначення методу ReadValue()
+        // Реалізація абстрактного методу
         public override double ReadValue()
         {
             // Випадкова температура від -10 до +40 °C
@@ -41,14 +38,14 @@ namespace lab3v20
         }
     }
 
-    // 🔹 Похідний клас PressureSensor
+    //  Похідний клас PressureSensor
     class PressureSensor : Sensor
     {
         private Random rand = new Random();
 
         public PressureSensor(string name) : base(name) { }
 
-        // Перевизначення методу ReadValue()
+        // Реалізація абстрактного методу
         public override double ReadValue()
         {
             // Випадковий тиск від 700 до 800 мм рт. ст.
@@ -62,7 +59,7 @@ namespace lab3v20
         {
             Console.WriteLine("=== Лабораторна робота №3: Наслідування ===\n");
 
-            // 🔸 Створюємо список сенсорів різних типів (поліморфізм)
+            //  Створюємо список сенсорів різних типів (поліморфізм)
             List<Sensor> sensors = new List<Sensor>
             {
                 new TemperatureSensor("Температурний датчик 1"),
@@ -72,7 +69,7 @@ namespace lab3v20
 
             List<double> values = new List<double>();
 
-            // 🔸 Зчитуємо показники
+            //  Зчитуємо показники
             foreach (var sensor in sensors)
             {
                 double value = sensor.ReadValue();
@@ -80,11 +77,11 @@ namespace lab3v20
                 Console.WriteLine($"{sensor}: {value}");
             }
 
-            // 🔸 Обчислення середнього значення
+            //  Обчислення середнього значення
             double avg = values.Average();
             Console.WriteLine($"\nСередній показник: {avg:F2}");
 
-            // 🔸 Виявлення аномалій (вище або нижче середнього ±20%)
+            //  Виявлення аномалій (вище або нижче середнього ±20%)
             double lowerBound = avg * 0.8;
             double upperBound = avg * 1.2;
 
@@ -92,7 +89,7 @@ namespace lab3v20
             foreach (var value in values)
             {
                 if (value < lowerBound || value > upperBound)
-                    Console.WriteLine($"⚠️  {value} — поза нормою");
+                    Console.WriteLine($"  {value} — поза нормою");
             }
 
             Console.WriteLine("\nРоботу завершено.");
