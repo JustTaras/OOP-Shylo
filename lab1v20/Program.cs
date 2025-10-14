@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace lab1v1
+namespace lab1v20
 {
     class Figure
     {
